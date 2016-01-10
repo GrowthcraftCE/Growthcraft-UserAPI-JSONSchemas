@@ -1,0 +1,24 @@
+{
+  "title": "ItemStackSchema",
+  "description": "An entry defining an ItemStack",
+  "type": "object",
+  "properties": {
+    "comment": { "$ref": "//growthcraft/user_api/Comment" },
+    "mod_id": {
+      "description": "Mod the item being used comes from",
+      "type": "string"
+    },
+    "name": {
+      "description": "Name of the item to search for",
+      "type": "string"
+    },
+    "amount": {
+      "description": "How many items are present in the stack?",
+      "type": "integer"
+    },
+    "meta": {
+      "description": "The item's damage, or metadata",
+      "type": "integer"
+    }
+  }
+}

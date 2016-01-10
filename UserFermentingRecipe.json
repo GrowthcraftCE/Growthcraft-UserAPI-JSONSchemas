@@ -1,0 +1,15 @@
+{
+  "title": "UserFermentingRecipe",
+  "description": "A Fermenting recipe entry",
+  "type": "object",
+  "properties": {
+    "comment": { "$ref": "//growthcraft/user_api/Comment" },
+    "item": { "$ref": "//growthcraft/user_api/ItemKeySchema" },
+    "input_fluid": { "$ref": "//growthcraft/user_api/FluidStackSchema" },
+    "output_fluid": { "$ref": "//growthcraft/user_api/FluidStackSchema" },
+    "time": {
+      "description": "Time in ticks for the process to complete",
+      "type": "integer"
+    }
+  }
+}

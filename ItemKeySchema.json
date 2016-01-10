@@ -1,0 +1,9 @@
+{
+  "title": "ItemKeySchema",
+  "description": "An entry defining an Ore Dictionary item, or ItemStack item",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "//growthcraft/user_api/ItemStackSchema" },
+    { "$ref": "//growthcraft/user_api/OreItemSchema" }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "OreItemSchema",
+  "description": "Entry defining an Ore Dictionary item",
+  "type": "object",
+  "properties": {
+    "comment": { "$ref": "//growthcraft/user_api/Comment" },
+    "ore": {
+      "description": "Name of the Ore Dictionary item",
+      "type": "string"
+    },
+    "amount": {
+      "description": "How many items are present in the stack?",
+      "type": "integer"
+    }
+  }
+}

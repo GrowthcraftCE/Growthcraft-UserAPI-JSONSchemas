@@ -1,0 +1,30 @@
+{
+  "title": "UserHeatSource",
+  "description": "A User Heat Source entry",
+  "type": "object",
+  "properties": {
+    "comment": { "$ref": "//growthcraft/user_api/Comment" },
+    "mod_id": {
+      "description": "Mod ID to lookup block from",
+      "type": "string"
+    },
+    "block_name": {
+      "description": "Name of block to use",
+      "type": "string"
+    },
+    "states": {
+      "title": "State Map",
+      "description": "States, or Metadata to Heat mapping",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "/(\\d+)/": {
+            "description": "Heat value, a value between 0.0 and 1.0",
+            "type": "float"
+          }
+        }
+      }
+    }
+  }
+}

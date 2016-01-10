@@ -1,0 +1,12 @@
+{
+  "$extends": "//growthcraft/user_api/ItemKeySchema",
+  "title": "ResidueSchema",
+  "description": "Entry defining an Residue item",
+  "type": "object",
+  "properties": {
+    "pomace": {
+      "description": "Pomace rate",
+      "type": "float"
+    }
+  }
+}

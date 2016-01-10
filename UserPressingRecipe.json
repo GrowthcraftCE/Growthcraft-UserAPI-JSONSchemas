@@ -1,0 +1,15 @@
+{
+  "title": "UserPressingRecipe",
+  "description": "A User Pressing Recipe",
+  "type": "object",
+  "properties": {
+    "comment": "//growthcraft/user_api/Comment",
+    "item": { "$ref": "//growthcraft/user_api/ItemKeySchema" },
+    "fluid": { "$ref": "//growthcraft/user_api/FluidStackSchema" },
+    "residue": { "$ref": "//growthcraft/user_api/ResidueSchema" },
+    "time": {
+      "description": "Time in ticks for the process to complete",
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "UserYeastEntry",
+  "description": "A user yeast biome mapping entry",
+  "type": "object",
+  "properties": {
+    "comment": { "$ref": "//growthcraft/user_api/Comment" },
+    "item": { "$ref": "//growthcraft/user_api/ItemKeySchema" },
+    "biomes": {
+      "description": "A list of biomes to map the yeast to",
+      "type": "array",
+      "items": {
+        "description": "An upcased biome type such as COLD, HOT, MAGICAL.",
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "FluidStackSchema",
+  "description": "Used for defining a Fluid Stack given a name and amount.",
+  "type": "object",
+  "properties": {
+    "comment": { "$ref": "//growthcraft/user_api/comment" },
+    "name": {
+      "description": "The fluid's registered name",
+      "type": "string"
+    },
+    "amount": {
+      "description": "How much of the fluid is present in the stack?",
+      "type": "integer"
+    }
+  },
+  "required": ["name", "amount"]
+}
